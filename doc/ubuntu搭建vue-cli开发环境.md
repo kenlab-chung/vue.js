@@ -117,6 +117,46 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 ```
+调用模板（如在App.vue的template加入如下内容）
+```
+ <router-link to="/login">login</router-link>| 
+    <router-link to="/home">home</router-link>|    
+    <router-link to="/about">about</router-link>   
+    </header>
+    <router-view></router-view>
+```
+App.vue全部代码
+```
+<template>
+  <div id="app">    
+    <img alt="Vue logo" src="./assets/logo.png">  
+    <header>
+    <router-link to="/login">login</router-link>| 
+    <router-link to="/home">home</router-link>|    
+    <router-link to="/about">about</router-link>   
+    </header>
+    <router-view></router-view>    
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'app'  
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+```
 ## axios 和 qs
 安装
 ```
