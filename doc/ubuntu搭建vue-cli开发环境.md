@@ -236,3 +236,8 @@ export default {
 }
 </script>
 ```
+## vuex
+安装
+```
+npm install vuex -S
+```
