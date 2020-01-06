@@ -242,3 +242,8 @@ export default {
 ```
 npm install vuex -S
 ```
+## vue显示图片
+```
+sudo cnpm install node-sass -D
+sudo cnpm install sass-loader -D
+```
